@@ -1,8 +1,10 @@
 (function(){
+	// Seletor das Queryes
 	const $ = (e) => {
 		return document.querySelector(e);
 	}
 
+	// Entrada para o formulario de cadastro.
 	$("#register").addEventListener("click",() => {
 		$(".scroll").style.transform = "translate(100%, 0%)";
 		$("#loguin").style.color = "black";
@@ -14,6 +16,7 @@
 
 	});
 
+	// Entrada para a pagina de loguin
 	$("#loguin").addEventListener("click", ()=>{
 		$(".scroll").style.transform = "translate(0%, 0%)";
 		$("#loguin").style.color = "white";
@@ -26,7 +29,8 @@
 	});
 
 	// Validando formulario
-	// Loguin
+	
+	// Formulario de Loguin
 	$(".submit").addEventListener("click", (e) => {
 		if ($("#user").value === "" || $("#sen").value === ""){
 			e.preventDefault();
@@ -56,7 +60,7 @@
 		}
 	})
 
-	// Reagistro
+	// Formulario Registro
 	$(".submit2").addEventListener("click",(e)=>{
 		if ($("#user2").value === "" || $("#email").value === "" || $("#sen2").value === "" || $("#sen2c").value === "") {
 			e.preventDefault();

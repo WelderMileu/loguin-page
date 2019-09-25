@@ -7,17 +7,22 @@
 	</head>
 	<body>
 		<!-- 
-			Colocar os icones da font-awesome contento as redes sociais
-			OBS: Nao consequir usar via cdn nem via npm 
+			- Colocar os icones da font-awesome contento as redes sociais.
+			- OBS: Não consequir usar via cdn nem via npm. 
 		-->
 		<div class="container">
 			<div class="form">
+				
+				<!-- Menu de navegação dos Formulario -->
 				<div class="toggle">
 					<div class="scroll"></div>
 					<button type="button" class="btn" id="loguin">Loguin</button>
 					<button type="button" class="btn" id="register">Registrar</button>
 				</div>
+
 				<div class="just">
+
+					<!-- Formulario de Loguin -->
 					<form method="POST" action="#" class="action">
 						<div class="images">
 							<img src="img/facebook.png">
@@ -25,25 +30,31 @@
 							<img src="img/linkedin.png">
 							<img src="img/twitter.png">
 						</div>
-						<label class="item-input" id="userl">Usuario</label>
-						<input type="text" class="form-control" id="user">
-						<label class="item-input" id="senl">Senha</label>
-						<input type="password" class="form-control" id="sen">
+						<div>
+							<label class="item-input" id="userl">Usuario</label>
+							<input type="text" class="form-control" id="user">
+							<label class="item-input" id="senl">Senha</label>
+							<input type="password" class="form-control" id="sen">
+						</div>
 						<div class="check">
 							<input type="checkbox"> <span>Lembrar Senha</span>
 						</div>
 						<span class="info" id="info"></span>
 						<button type="submit" class="submit">Logar</button>
 					</form>
+
+					<!-- Formulario de Cadastro -->
 					<form method="POST" action="#" class="action">
-						<label class="item-input" id="userl2">Usuario</label>
-						<input type="text" class="form-control" id="user2">
-						<label class="item-input" id="emaill">E-mail</label>
-						<input type="text" class="form-control" id="email">
-						<label class="item-input" id="sen2l">Senha</label>
-						<input type="text" class="form-control" id="sen2">
-						<label class="item-input" id="sen2lc">Confirmar Senha</label>
-						<input type="text" class="form-control" id="sen2c">
+						<div>
+							<label class="item-input" id="userl2">Usuario</label>
+							<input type="text" class="form-control" id="user2">
+							<label class="item-input" id="emaill">E-mail</label>
+							<input type="text" class="form-control" id="email">
+							<label class="item-input" id="sen2l">Senha</label>
+							<input type="text" class="form-control" id="sen2">
+							<label class="item-input" id="sen2lc">Confirmar Senha</label>
+							<input type="text" class="form-control" id="sen2c">
+						</div>
 						<div class="check">
 							<input type="checkbox"> <span>Aceitar os termos de uso</span>
 						</div>
@@ -51,7 +62,10 @@
 						<button type="submit" class="submit2">Cadastrar</button>
 					</form>
 				</div>
+
+				<!-- Imagem do Formulario de Cadastro -->
 				<img src="img/cas.png" class="float">
+			
 			</div>
 		</div>
 		<script type="text/javascript" src="js/main.js"></script>

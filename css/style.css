@@ -21,10 +21,12 @@ body{
 	background-repeat: no-repeat;
 }
 
+/* Container da Pagina */
 .container{
 	margin:50px auto;
 }
 
+/* Formularios */
 .container .form{
 	background-color: var(--brancolight) !important;
 	width: 350px;
@@ -37,6 +39,7 @@ body{
 	box-shadow: 10px 10px 10px black !important;
 	transition: .5s ease-in-out;
 }
+
 .container .form .toggle{
 	border:1px solid rgba(0,0,0,.3);
 	text-align: center;
@@ -61,6 +64,7 @@ body{
 	cursor: pointer;
 }
 
+/* Botão do segundo Formulario */
 .container .form .toggle .btn:nth-child(3){
 	color: black;
 	margin-left: 40px;
@@ -90,6 +94,7 @@ body{
 	z-index: 1000;
 }
 
+/* Inpute dos Formularios */
 .container .form .action .form-control{
 	border:none;
 	padding:3px;
@@ -123,6 +128,7 @@ body{
 	opacity: .5;
 }
 
+/* container onde contem os dois Formularios */
 .just{
 	display: flex;
 	transition:.8s ease-in-out;
@@ -141,6 +147,7 @@ body{
 	font-size: .8rem;
 }
 
+/* Container das imagens */
 .images{
 	width: 150px;
 	margin: 0 auto;
@@ -161,6 +168,7 @@ body{
 	transform: scale(1.2);
 }
 
+/* stylo das caxas de alerta */
 .info{
 	color:var(--branco);
 	transition: .2s ease-in-out;
@@ -176,6 +184,7 @@ body{
 	border-radius: 5px;
 }
 
+/* Stilo da imagem que esta no formulario de registro */
 .float{
 	position: relative;
 	top:-50px;
