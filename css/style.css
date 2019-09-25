@@ -1,0 +1,175 @@
+:root{
+	--blue:#f00;
+	--branco:#f1f1f1;
+	--brancolight:#fff;
+	--black:#000;
+	--black-client:rgba(0,0,0,.5);
+}
+
+*, ::after, ::before{
+	padding: 0;
+	margin:0;
+	box-sizing: border-box;
+	font-family: 'roboto',sans-serif;
+}
+
+body{
+	background-image: url('../img/img03.jpeg');
+	background-size: 100%;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+.container{
+	margin:50px auto;
+}
+
+.container .form{
+	background-color: var(--brancolight);
+	width: 350px;
+	height: 430px; 
+	margin: 0 auto;
+	padding:10px;
+	border-radius: 3px;
+	opacity: .8;
+	overflow: hidden;
+	box-shadow: 10px 10px 10px black !important;
+	transition: .5s ease-in-out;
+}
+.container .form .toggle{
+	border:1px solid rgba(0,0,0,.3);
+	text-align: center;
+	width: 200px;
+	margin:0 auto;
+	/*padding:5px;*/
+	border-radius: 20px;
+	margin-top: 40px;
+	cursor: pointer;
+}
+
+.container .form .toggle .btn{
+	background-color: transparent;
+	border:none;
+	/*margin:5px;*/
+	color: white;
+	z-index: 1000;
+	position: relative;
+	transition: .5s;
+	height: 33px;
+	width: 35%;
+	text-align: right;
+	cursor: pointer;
+}
+
+.container .form .toggle .btn:nth-child(3){
+	color: black;
+	margin-left: 40px;
+	text-align: left;
+}
+
+.container .form .toggle .scroll{
+	background-color: blue;
+	width: 100px;
+	height: 35px;
+	position: absolute;
+	transform: translate(0%, 0%);
+	border-bottom-left-radius: 20px;
+	border-top-left-radius: 20px;
+	border-bottom-right-radius:20px;
+	border-top-right-radius:20px;
+	transition: .8s ease-in-out;
+}
+
+.container .form .action{
+	display: flex;
+	flex-direction: column;
+	margin:0 auto;
+	margin-top: 30px;
+	margin-right:100px;
+	margin-left:80px;
+	z-index: 1000;
+}
+
+.container .form .action .form-control{
+	border:none;
+	padding:3px;
+	width: 180px;
+	padding-left:10px;
+	background-color: transparent;
+	border-bottom:1px solid var(--black-client);
+	margin-bottom: 20px;
+	font-size: .8rem;
+	transition: 0.1s ease-in-out;
+	color: grey;
+}
+
+.container .form .action .check span{
+	font-size: .8rem;
+}
+
+.container .form .action button{
+	background-color: blue;
+	color:var(--brancolight);
+	border:none;
+	padding:5px;
+	margin-top: 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: .5s;
+	margin-top: 40px;
+}
+
+.container .form .action button:hover{
+	opacity: .5;
+}
+
+.just{
+	display: flex;
+	transition:.8s ease-in-out;
+}
+
+/* Transition das labels */
+
+.item-input{
+	position: relative;
+	padding-left:5px;
+	font-size: .8rem;
+	transition: .5s ease-in-out;
+}
+
+.action:nth-child(2) .item-input{
+	font-size: .8rem;
+}
+
+.images{
+	width: 150px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+.images img{
+	width: 30px;
+	cursor:pointer;
+	transition: .3s ease-in-out;
+}
+
+.images img:hover{
+	transform: scale(1.2);
+}
+
+.info{
+	color:var(--blue);
+	transition: .5s ease-in-out;
+	font-size: .8rem;
+}
+
+.float{
+	position: relative;
+	top:-150px;
+	left: 500px;
+	transition: .5s ease-in-out;
+}
