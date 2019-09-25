@@ -10,6 +10,8 @@
 		$(".just").style.marginLeft = "-370px";
 		$(".form").style.height = "500px";
 		$(".float").style.left = "100px";
+		$(".float").style.top = "-150px";
+
 	});
 
 	$("#loguin").addEventListener("click", ()=>{
@@ -20,6 +22,7 @@
 		$(".form").style.height = "430px";
 		$(".form").style.backgroundImage = "";
 		$(".float").style.left = "500px";
+		$(".float").style.top = "-50px";
 	});
 
 	// Validando formulario
@@ -28,7 +31,10 @@
 		if ($("#user").value === "" || $("#sen").value === ""){
 			e.preventDefault();
 			$("#info").innerHTML = "Usuario ou senha vazios";
-			$("#info").style.marginTop = "10px";
+			$("#info").style.opacity = "1";
+			$("#info").style.visibility = "visible";
+			$("#info").style.marginLeft = "0px";
+			$(".submit").style.marginTop ="20px";
 			
 			if ($("#user").value === "") {
 				$("#user").style.borderBottom = "1px solid red";
@@ -56,9 +62,10 @@
 			e.preventDefault();
 
 			$("#info2").innerHTML = "Por favor Preencha os campos";
-			$("#info2").style.marginTop = "10px";
-
-
+			$("#info2").style.opacity = "1";
+			$("#info2").style.visibility = "visible";
+			$("#info2").style.marginLeft = "0px";
+			$(".submit2").style.marginTop = "20px";
 			// Usuario
 			if ($("#user2").value === "") {
 				$("#user2").style.borderBottom = "1px solid red";
@@ -107,7 +114,9 @@
 		}else if($("#sen2c").value !== $("#sen2").value) {
 			e.preventDefault();
 			$("#info2").innerHTML = "Senha não confirmada!";
-			$("#info2").style.marginTop = "10px";
+			$("#info2").style.opacity = "1";
+			$("#info2").style.visibility = "visible";
+			$("#info2").style.marginLeft = "0px";
 		}
 		else{
 			$("#info2").innerHTML = " ";
